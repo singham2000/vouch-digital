@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,700;1,100&family=Roboto:wght@500&display=swap');
+@import 'antd/dist/antd.css';
+$roboto: 'Roboto', sans-serif;
+$greyblue: rgb(20, 45, 71);
+$orange: rgb(250, 121, 0);
+$white: #ffffff;
+
+header {
+    padding: 1vh 2vh 1vh 2vh;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $white;
+}
+
+.ant-layout-header {
+    background-color: $white;
+}
+
+.logo {
+    font-family: $roboto;
+    font-weight: 700;
+    font-size: 2rem;
+    color: $greyblue;
+    display: flex;
+}
+
+.circle {
+    margin: 4.3vh 0 0 0.5vh;
+    border-radius: 12px;
+    background-color: $orange;
+    height: 1vh;
+    width: 1vh;
+}
+
+.btns {
+    display: flex;
+    float: right;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+
+.btn {
+    color: $white;
+
+    &.width {
+        width: 180px;
+        height: 52px;
+    }
+
+    &.greyblue {
+        background-color: $greyblue;
+    }
+
+    &.orange {
+        background-color: $orange;
+    }
+}
+
+.image {
+    height: 100vh;
+    width: 60vw;
+    background-color: aqua;
+}
+
+.ant-checkbox-checked .ant-checkbox-inner {
+    background-color: $greyblue;
+    border-color: $greyblue;
+}
+
+.form-container {
+    background-color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 600px) {
+    .btns {
+        display: none;
+    }
+
+    .image {
+        display: none;
+    }
+}

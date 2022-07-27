@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { Layout, Image } from 'antd';
+import Form from './components/Form';
+import Navbar from './components/Navbar';
+import './styles/style.scss';
+import Img from './styles/sd.png';
+const { Content } = Layout;
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Layout>
+        <Navbar />
+        <Content>
+          <div className="container">
+            <Form />
+            <Image
+              className='image'
+              src={Img}
+              preview={false}
+              placeholder="Loading..."
+              alt="Developers"
+            />
+          </div>
+        </Content>
+      </Layout>
+    </>
   );
 }
 
