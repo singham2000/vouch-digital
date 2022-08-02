@@ -16,7 +16,7 @@ const Form = () => {
       body: JSON.stringify(data),
     }).then((data) => {
       console.log(data.status);
-      if (data.status == 400) {
+      if (data.status === 400) {
         setStat(false);
         notification["error"]({
           message: 'Error',
